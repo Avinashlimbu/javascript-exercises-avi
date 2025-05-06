@@ -1,16 +1,3 @@
-/*
-const sumAll = function(sumA, sumB) {
- for(; sumA <= 10; sumA+=sumB) {
-   return sumA + sumB;
- }
-}
-
-console.log(sumAll)
-sumAll(2, 4);
-
-//console.log(sumAll(2));
-*/
-
 
 const sumAll = function (para1, para2) {
     finalSum  = 0;
@@ -29,11 +16,22 @@ const sumAll = function (para1, para2) {
 
 
 console.log(sumAll(2, 5));
-//console.log(sumAll(1,4));
 
 
-
-
+/*
+function sumAll(num1, num2) {
+    let begin = Math.min(num1, num2);
+    let end = Math.max(num1, num2);
+    sum = 0;
+    
+    for (let i = begin; i <= end; i++) {
+        sum += i;
+    }
+    return sum;
+}
+ 
+sumAll(1, 5);
+*/
 // Do not edit below this line
 module.exports = sumAll;
 
