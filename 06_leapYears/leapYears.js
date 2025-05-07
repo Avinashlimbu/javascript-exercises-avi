@@ -1,7 +1,7 @@
 const leapYears = function(years) {
     let date = years
     //if (date % 100 > 0) {
-    if (date % 4 === 0 && date % 100 > 0 || date % 400 === 0 ) {    
+    if (date % 4 === 0 && (date % 100 > 0 || date % 400 === 0)) {    
         console.log(`The ${date} you have entered is a leap year`)
         console.log(`Divided by 4: ${date/4}, Remaider = ${date % 4}`)
         console.log(`Divided by 100: ${date/100}, Remaider = ${date % 100}`)
@@ -17,6 +17,9 @@ const leapYears = function(years) {
 };
 
 console.log(leapYears(1883));
+console.log(leapYears(1800));
+console.log(leapYears(2000));
+
 
 // Do not edit below this line
 
